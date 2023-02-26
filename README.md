@@ -22,6 +22,7 @@ Please read the documentation for more commands and information about the stack!
 You can check the TRPC routers inside `src/server/api/root.ts`
 - **game** (`src/server/api/routers/game.ts`)
 	- `getGames` : to GET all the games in the database (paymentInfos included) 
+	- `getGame` : to GET one game by id
 - **auth** (`src/server/api/routers/auth.ts`)
 	- `getUserTypes` : to GET all the user types in the database (The user types you need to add is "Elemen" and "Mahasiswa")
 	- `register` : to POST registration data to the database, the fields are:
