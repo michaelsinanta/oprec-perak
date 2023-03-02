@@ -11,6 +11,7 @@ export default function Result() {
   const { data } = games;
   const userTypes = api.auth.getUserType.useQuery({ id: String(router.query["typeId"]) });
   const [openModal, setOpenModal] = useState(true);
+  
   return (
     <>
       <body>
@@ -33,14 +34,17 @@ export default function Result() {
               <h4 className="font-poppinsReg text-[#F4EFD3] text-md">Mandiri 6969420<br />Jenius 6969420<br />Gopay 6969420</h4>
             </div>
 
-
             <div className="bg-[#4F569E] p-8 border-1 border-black">
               <h4 className="font-poppinsSemi text-white text-2xl mb-2">{router.query["name"]}</h4>
               <h4 className="font-poppinsReg text-white">{router.query["nickname"]} - {userTypes.data?.name}</h4>
             </div>
             <div className="flex space-x-2">
             <div className="font-poppinsBold text-[#F4EFD3] text-sm">Sembunyikan Detil Informasi</div>
+            { openModal ? 
             <ExpandMoreIcon onClick={()=>setOpenModal(!openModal)} className="text-white rotate-180"/>
+            : 
+            <ExpandMoreIcon onClick={()=>setOpenModal(!openModal)} className="text-white"/>
+            }
             </div>
             
             {
