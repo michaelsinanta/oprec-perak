@@ -63,46 +63,86 @@ export default function Result() {
             </div>
           </div>
         </div>
-        <div className="relative min-h-screen overflow-hidden bg-[#272B52]">
+         {/* Assets */}
+         <div className="relative min-h-[110vh] overflow-hidden bg-[#272B52] lg:block md:block hidden">
           <img
             src={"assets/background/Ellipse 66.svg"}
             alt="Logo Perak"
-            className="absolute left-0 z-10 -rotate-90"
+            className="absolute left-[410px] bottom-[300px] z-10 -rotate-90"
           />
           <img
             src={"assets/background/Ellipse 67.svg"}
             alt="Logo Perak"
-            className="absolute right-0 z-20 -rotate-90"
+            className="absolute left-[350px] bottom-[400px] z-20 -rotate-90"
           />
           <img
             src={"assets/background/Ellipse 68.svg"}
             alt="Logo Perak"
-            className="absolute right-0 z-30 -rotate-90"
+            className="absolute left-[600px] bottom-[100px] z-30 -rotate-90"
           />
           <img
             src={"assets/elements/star1.svg"}
             alt=""
-            className="absolute right-0 top-20 z-30 w-[35%] rotate-90 pr-32"
+            className="absolute right-0 bottom-56 z-30 w-[28%] pr-32"
           />
           <img
             src={"assets/elements/star2.svg"}
             alt=""
-            className="absolute bottom-0 right-96 z-30 w-[30%]"
+            className="absolute bottom-0 right-96 z-30 w-[22%] "
           />
           <img
             src={"assets/elements/crystal1.svg"}
             alt=""
-            className="absolute bottom-0 right-40 z-30 w-[10%]"
+            className="absolute top-[40px] right-20 z-30 w-[13%] -rotate-90"
           />
           <img
             src={"assets/elements/crystal2.svg"}
             alt=""
-            className="absolute bottom-0 right-0 z-30 w-[15%]"
+            className="absolute top-0 right-0 z-30 w-[15%] -rotate-90"
           />
           <img
             src={"assets/elements/crystal3.svg"}
             alt=""
-            className="absolute bottom-0 left-28 z-30 w-[20%]"
+            className="absolute bottom-0 right-[-50px] z-30 w-[20%] -rotate-90"
+          />
+           <img
+            src={"assets/elements/symbol1.svg"}
+            alt=""
+            className="absolute bottom-[550px] right-[440px] z-30 w-[30px] -rotate-90"
+          />
+           <img
+            src={"assets/elements/symbol2.svg"}
+            alt=""
+            className="absolute bottom-20 right-[300px] z-30 w-[20px] -rotate-90"
+          />
+           <img
+            src={"assets/elements/symbol3.svg"}
+            alt=""
+            className="absolute bottom-0 right-[340px] z-30 w-[50px] -rotate-90"
+          />
+        </div>
+
+        <div className="relative min-h-[115vh] overflow-hidden bg-[#272B52] lg:hidden md:hidden block">
+       
+          <img
+            src={"assets/background/Ellipse 67.svg"}
+            alt="Logo Perak"
+            className="absolute z-20 bottom-[130px] scale-150"
+          />
+          <img
+            src={"assets/background/Ellipse 68.svg"}
+            alt="Logo Perak"
+            className="absolute bottom-0 z-30 scale-150"
+          />
+          <img
+            src={"assets/elements/star1.svg"}
+            alt=""
+            className="absolute bottom-[550px] z-30 w-[180px] -right-5"
+          />
+          <img
+            src={"assets/elements/reversedstar.png"}
+            alt=""
+            className="absolute bottom-[250px] z-30 w-[160px] right-0"
           />
         </div>
       </body>
